@@ -5,34 +5,12 @@
 으로 구성한 모험가 그룹에 참여해야 여행을 떠날 수 있도록 규정했습니다.
 • 동빈이는 최대 몇 개의 모험가 그룹을 만들 수 있는지 궁금합니다. N명의 모험가에 대한 정보가 주어졌을 때, 여행을 떠날 수 있는 그룹 수의 최댓값을 구하는 프로그램을 작성하세요.
 '''
-import time
-# n = int(input())
 
-# fear_val = list(map(int, input().split()))
-
-# fear_val.sort(reverse=False)
-
-# group_result = 0
-
-# while True:
-#     # print(fear_val)
-#     if not fear_val:
-#         break
-#     fear = fear_val.pop(-1)
-#     if fear > len(fear_val):
-#         break
-#     for i in range(fear-1):
-#         fear_val.pop()
-#     group_result += 1
-        
-# print(group_result) 
 
 
 n = int(input())
 data = list(map(int, input().split()))
 data.sort()
-
-start = time.time()
 
 
 result = 0 # 총 그룹의 수
@@ -43,6 +21,3 @@ for i in data: # 공포도를 낮은 것부터 하나씩 확인하며
         result += 1# 총 그룹의 수 증가시키기
         count = 0 # 현재 그룹에 포함된 모험가의 수 초기화
 print(result) # 총 그룹의 수 출력
-
-end = time.time()
-print(f"{end - start:.5f} sec")

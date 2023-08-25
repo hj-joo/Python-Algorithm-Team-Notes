@@ -20,23 +20,6 @@ x, y = 1, 1
 dx = [0, -1, 0, 1]
 dy = [1, 0, -1, 0]
 
-# for direction in data:
-#     if direction == 'R':
-#         x = x + dx[0]
-#         y = y + dy[0]
-#     if direction == 'U':
-#         x = x + dx[1]
-#         y = y + dy[1]
-#     if direction == 'L':
-#         x = x + dx[2]
-#         y = y + dy[2]
-#     if direction == 'D':
-#         x = x + dx[3]
-#         y = y + dy[3]
-#     # if x < 1 or y < 1:
-        
-        
-# print(x, y)
 
 move_types = ['R', 'U', 'L', 'D']
 
