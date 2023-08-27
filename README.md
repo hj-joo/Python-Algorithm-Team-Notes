@@ -79,10 +79,11 @@ def bfs(graph, start, visited):
                 queue.append(i)
                 visited[i] = True
 ```
-* String 처리
-[String_Manipulation](https://github.com/hj-joo/Python-Algorithm-Team-Notes/tree/main/String_Manipulation)
-문자열 처리 꿀팁!
-'''
+## String 처리
+
+* [String_Manipulation](https://github.com/hj-joo/Python-Algorithm-Team-Notes/tree/main/String_Manipulation)
+* 문자열 처리 꿀팁!
+```
 # 문자열 있는지 확인
 # 문자열 안에 a라는 문자열이 포함되는지 -> in쓰면 됨
 if a in string:
@@ -118,7 +119,7 @@ from collections import Counter
 counts = Counter(words)
 # 제일 첫번째로 많이 카운트 된 단어 소환
 counts.most_common(1)[0][0]
-'''
+```
 
 > To be continue...
 # Reference
