@@ -17,6 +17,7 @@ for i in range(4):
 ```
 
 ## DFS/BFS
+[DFS/BFS](https://github.com/hj-joo/Python-Algorithm-Team-Notes/tree/main/DFS\BFS)
 * 스택 자료구조: **선입후출**, 프링글스 과자통, 파이썬에서는 리스트로 **append, pop()**으로만 구현 가능
 ```
 stack = []
@@ -78,8 +79,49 @@ def bfs(graph, start, visited):
                 queue.append(i)
                 visited[i] = True
 ```
+* String 처리
+[String_Manipulation](https://github.com/hj-joo/Python-Algorithm-Team-Notes/tree/main/String_Manipulation)
+문자열 처리 꿀팁!
+'''
+# 문자열 있는지 확인
+# 문자열 안에 a라는 문자열이 포함되는지 -> in쓰면 됨
+if a in string:
+	pass
+
+# 아스키 코드 활용
+# 만약 A를 숫자로 바꾸고 싶다?
+alpha = 'A'
+int(ord(alpha)) - int(ord('A')) + 1
+
+# 알파벳인지 확인
+alpha.isalpha() # --> True면 알파벳
+
+# 숫자인지 확인
+digit.isdigit()
+
+# 알파벳, 숫자 확인
+alnum.isalnum()
+
+# 문자열 팰린드롬
+s==s[::-1]
+
+# 문자열 공백없이 나열하는 방법
+print(''.join(string))
+
+# 문자열 변경 및 제거 re.sub
+import re
+paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
+words = re.sub('[^\w]', ' ', paragraph.lower()).split() # 1번째 인자 -> \w(단어) ^ 아닌거,  2번째 인자 -> 공백으로 변경, 3번째 인자 -> .lower() 소문자 변경, split() 공백 기준 분리
+
+# 문자열 개수 세기
+from collections import Counter
+counts = Counter(words)
+# 제일 첫번째로 많이 카운트 된 단어 소환
+counts.most_common(1)[0][0]
+'''
 
 > To be continue...
 # Reference
 * [동빈나 깃허브](https://github.com/ndb796/python-for-coding-test)
 * [동빈나 유튜브](https://www.youtube.com/playlist?list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC)
+* [파이썬 알고리즘 인터뷰](https://github.com/onlybooks/algorithm-interview)
