@@ -121,6 +121,18 @@ counts = Counter(words)
 counts.most_common(1)[0][0]
 ```
 
+## Sorting
+* [Sorting](https://github.com/hj-joo/Python-Algorithm-Team-Notes/tree/main/Sorting)
+* 사실 sort()나 sorted()만 써도 충분하긴 함..
+
+## Binary_Search
+* [Binary_Search](https://github.com/hj-joo/Python-Algorithm-Team-Notes/tree/main/Binary_Search)
+* 이진 탐색: 정렬되어 있는 리스트에서 탐색 범위를 절반씩 좁혀가며 데이터를 탐색하는 방법
+	* 이진 탐색은 시작점, 끝점, 중간점을 이용하여 탐색 범위를 설정합니다.
+	* 이진 탐색 개꿀팁! -> from bisect import bisect_left, bisect_right
+	* bisect_left(arr, value) --> 왼쪽 인덱스 반환	
+	* bisect_right(arr, value) --> 오른쪽 인덱스 반환	
+
 > To be continue...
 # Reference
 * [동빈나 깃허브](https://github.com/ndb796/python-for-coding-test)
